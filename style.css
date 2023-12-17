@@ -158,6 +158,11 @@ a {
 .zwischentitel {
   font-family: "Barlow", sans-serif;
   font-weight: 600;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #e4002b;
+  margin-bottom: 1rem;
 }
 
 .text_titel1 {
