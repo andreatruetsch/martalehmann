@@ -111,6 +111,19 @@ a {
   color: #e4002b;
 }
 
+.portrait {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.portrait > img {
+  object-fit: cover;
+  width: 100%;
+}
+
 .footer {
   background-color: lightgray;
   grid-column-start: 1;
