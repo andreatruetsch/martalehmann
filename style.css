@@ -3,6 +3,14 @@ Font: Barlow
 400 = Navigation, Untertitel Logo
 500 = Lauftext + Titel rot
 600 = Logo, Page Titel
+
+Font size:
+Logo, Quote Startseite: 3.3 rem
+Site-Titel: 2.8 rem
+Navigation, Logo Untertitel: 1.6 rem
+Lauftext, Untertitel: 1.5 rem
+Formular, Jobtitel: 1rem
+
 */
 
 a {
@@ -34,15 +42,17 @@ a {
   list-style-type: none;
   font-family: "Barlow", sans-serif;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.6rem;
   display: grid;
   height: auto;
 
   width: fit-content;
-  grid-auto-flow: column;
+  grid-auto-flow: row;
   justify-items: center;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(3, min-content);
+  grid-column-gap: 2rem;
+  grid-row-gap: 0.2rem;
+  grid-template-columns: repeat(8, min-content);
+  grid-template-rows: auto;
 }
 
 .container > .nav > ul > li {
@@ -101,19 +111,6 @@ a {
   color: #e4002b;
 }
 
-.portrait {
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 6;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-}
-
-.portrait > img {
-  object-fit: cover;
-  width: 100%;
-}
-
 .footer {
   background-color: lightgray;
   grid-column-start: 1;
@@ -155,7 +152,7 @@ a {
   margin-top: 6rem;
 }
 
-.text {
+.text_uebermich {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 6;
@@ -163,7 +160,7 @@ a {
   justify-self: start;
   font-family: "Barlow", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-top: 6rem;
   margin-bottom: 6rem;
   margin-left: 1rem;
@@ -175,9 +172,38 @@ a {
   font-weight: 600;
   font-family: "Barlow", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #e4002b;
   margin-bottom: 1rem;
+}
+
+.zwischentitel_schwarz_fett {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: black;
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.zwischentitel_schwarz_fett_abstand {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: black;
+  margin-top: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.aufzaehlung {
+  list-style: disc;
+  font-size: 1.6rem;
+  margin-left: 1.3rem;
+  margin-bottom: 2rem;
 }
 
 .text_titel1 {
@@ -189,7 +215,7 @@ a {
   justify-self: start;
   font-family: "Barlow", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-left: 1rem;
   margin-top: 6rem;
   color: #e4002b;
@@ -204,7 +230,7 @@ a {
   justify-self: start;
   font-family: "Barlow", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-left: 1rem;
   line-height: 1.3;
 }
@@ -218,7 +244,7 @@ a {
   justify-self: start;
   font-family: "Barlow", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-top: 6rem;
   color: #e4002b;
   margin-bottom: 1rem;
@@ -232,7 +258,7 @@ a {
   justify-self: start;
   font-family: "Barlow", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.3;
 }
 
@@ -246,7 +272,7 @@ a {
   margin-right: 1rem;
   font-family: "Barlow", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-left: 1rem;
   margin-top: 6rem;
   color: #e4002b;
@@ -261,7 +287,7 @@ a {
   justify-self: start;
   font-family: "Barlow", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-left: 1rem;
   margin-bottom: 6rem;
   line-height: 1.3;
@@ -277,7 +303,7 @@ a {
   margin-right: 1rem;
   font-family: "Barlow", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-top: 6rem;
   color: #e4002b;
   margin-bottom: 1rem;
@@ -291,9 +317,60 @@ a {
   justify-self: start;
   font-family: "Barlow", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 6rem;
   line-height: 1.3;
+}
+
+.text_formular {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  align-self: start;
+  justify-self: start;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 6rem;
+  margin-left: 1rem;
+  line-height: 1.3;
+}
+
+.mitglieder_komitee {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 6;
+  justify-self: start;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 6rem;
+  margin-left: 1rem;
+  margin-bottom: 6rem;
+  line-height: 1.3;
+}
+
+.titel_komitee {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  line-height: 1.3;
+  color: #e4002b;
+}
+
+.beruf_mitglied_komitee {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.mitglied_komitee {
+  margin-bottom: 1.6rem;
+}
+
+.mitglieder_komitee_liste {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
 
 .sp_logo > img {
@@ -312,7 +389,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 1180px) {
   .container > .nav > ul {
     font-size: 1.2rem;
   }
@@ -331,7 +408,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1000px) {
   .container > .logo {
     grid-column-start: 1;
     grid-column-end: 6;
@@ -430,12 +507,25 @@ a {
     margin-bottom: 0.2rem;
   }
 
-  .text {
+  .text_uebermich {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 7;
     margin-top: 0.2rem;
     margin-bottom: 6rem;
     margin-left: 0rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .container > .nav > ul {
+    display: grid;
+
+    justify-items: start;
+    grid-template-columns: repeat(1, min-content);
+    grid-template-rows: auto;
+  }
+  .image_start {
+    display: none;
   }
 }
