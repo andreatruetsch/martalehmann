@@ -455,12 +455,14 @@ a {
     grid-column-end: 5;
     grid-row: 7;
     align-self: end;
+    margin-left: 1rem;
   }
 
   .textblock2 {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row: 8;
+    margin-left: 1rem;
   }
 
   .text_titel3 {
@@ -481,12 +483,14 @@ a {
     grid-column-end: 5;
     grid-row: 11;
     align-self: end;
+    margin-left: 1rem;
   }
 
   .textblock4 {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row: 12;
+    margin-left: 1rem;
   }
 
   .footer {
