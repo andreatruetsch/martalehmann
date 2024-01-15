@@ -228,6 +228,11 @@ a {
   text-decoration-color: grey;
 }
 
+.links_rot {
+  text-decoration: underline;
+  text-decoration-color: #e4002b;
+}
+
 .text_titel1 {
   grid-column-start: 2;
   grid-column-end: 2;
@@ -358,44 +363,6 @@ a {
   line-height: 1.3;
 }
 
-.mitglieder_komitee {
-  grid-column-start: 4;
-  grid-column-end: 4;
-  grid-row-start: 6;
-  grid-row-end: 6;
-
-  justify-self: start;
-  font-family: "Barlow", sans-serif;
-  font-weight: 500;
-  font-size: 1.6rem;
-  margin-top: 6rem;
-  margin-left: 1rem;
-  margin-bottom: 6rem;
-  line-height: 1.3;
-}
-
-.titel_komitee {
-  font-size: 1.6rem;
-  margin-bottom: 2rem;
-  line-height: 1.3;
-  color: #e4002b;
-}
-
-.beruf_mitglied_komitee {
-  font-size: 1rem;
-  line-height: 1.3;
-}
-
-.mitglied_komitee {
-  margin-bottom: 1.6rem;
-}
-
-.mitglieder_komitee_liste {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-}
-
 .sp_logo > img {
   height: auto;
   width: 2rem;
@@ -404,11 +371,6 @@ a {
 .quote {
   grid-column: 4;
   grid-row: 6;
-}
-
-.mitglieder_komitee,
-.titel_komitee {
-  display: none;
 }
 
 @media only screen and (max-width: 1350px) {
